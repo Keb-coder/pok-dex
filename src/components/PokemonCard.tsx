@@ -1,6 +1,6 @@
 import "./App.css";
 
-function App() {
+function PokemonCard() {
   return (
     <figure>
       <img
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default PokemonCard;
