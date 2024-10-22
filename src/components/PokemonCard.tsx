@@ -1,6 +1,13 @@
 import "./PokemonCard";
 
-function PokemonCard({ pokemon }) {
+interface PokemonCard {
+  pokemon: {
+    name: string;
+    imgSrc?: string;
+  };
+}
+
+function PokemonCard({ pokemon }: PokemonCard) {
   return (
     <div>
       {pokemon.imgSrc ? (

@@ -20,7 +20,7 @@ function App() {
       <h1>Liste des Pokémons</h1>
       <figure>
         <figcaption>
-          <PokemonCard pokemon={pokemonList[1]} />
+          <PokemonCard pokemon={pokemonList[0]} />
         </figcaption>
       </figure>
     </div>
