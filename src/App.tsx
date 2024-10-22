@@ -1,16 +1,16 @@
 import "./App.css";
+import PokemonCard from "./components/PokemonCard";
 
 function App() {
   return (
-    <figure>
-      <img
-        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-        alt="Bulbasaur"
-      />
-      <figcaption>
-        <p>Bulbasaur</p>
-      </figcaption>
-    </figure>
+    <div>
+      <h1>Liste des Pokémons</h1>
+      <figure>
+        <figcaption>
+          <PokemonCard />
+        </figcaption>
+      </figure>
+    </div>
   );
 }
 

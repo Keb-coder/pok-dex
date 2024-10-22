@@ -1,4 +1,4 @@
-import "./App.css";
+import "./PokemonCard";
 
 const pokemonList = [
   {
@@ -14,17 +14,15 @@ const pokemonList = [
 ];
 
 function PokemonCard() {
+  const pokemon = pokemonList[0];
   return (
     <div>
-      <figure>
-        <img
-          src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
-          alt="Bulbasaur"
-        />
-        <figcaption>
-          <p>Bulbasaur</p>
-        </figcaption>
-      </figure>
+      {pokemon.imgSrc ? (
+        <img src={pokemon.imgSrc} alt={pokemon.name} />
+      ) : (
+        <p>???</p>
+      )}
+      <h2>{pokemon.name}</h2>
     </div>
   );
 }
